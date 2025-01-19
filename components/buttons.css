@@ -1,0 +1,28 @@
+.btn {
+    @apply inline-flex items-center px-4 py-2 rounded-sm font-semibold text-xs tracking-widest uppercase transition ease-in-out duration-150;
+
+    &.btn--social {
+        @apply bg-white shadow-sm rounded-sm border text-gray-600 flex items-center;
+
+        img {
+            @apply h-6 w-6 mr-2 object-contain;
+        }
+    }
+}
+.btn-primary {
+    @apply bg-gradient-to-b from-accent-400 to-accent-300 shadow-highlighter border border-accent-400 text-accent-50 hover:text-white active:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    &:disabled {
+        @apply opacity-50 cursor-not-allowed;
+    }
+}
+.btn-secondary {
+    @apply bg-gradient-to-b from-slate-100 to-slate-50 shadow-inset-px border border-slate-200 text-slate-600 hover:text-slate-500 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2;
+}
+.btn-danger {
+    @apply bg-gradient-to-b from-red-500 to-red-400 shadow-highlighter border border-red-500 text-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2;
+}
+
+.btn.btn-sm {
+    @apply px-2 py-1 tracking-normal normal-case;
+}
+

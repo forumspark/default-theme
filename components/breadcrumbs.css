@@ -1,0 +1,7 @@
+.breadcrumbs {
+    @apply max-w-7xl mx-1.5 sm:mx-auto bg-slate-50 my-6 rounded sm:px-4 px-2 py-2 flex items-center gap-x-1 gap-y-1 text-sm flex-wrap;
+}
+
+.breadcrumbs__divider {
+    @apply w-5 h-5 text-zinc-400 mt-px;
+}

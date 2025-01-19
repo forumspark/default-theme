@@ -1,0 +1,14 @@
+@import url(https://fonts.bunny.net/css?family=fira+sans:400,500,600);
+@import "tailwind/base.css";
+@import "base.css";
+
+@import "tailwind/components.css";
+@import "components.css";
+
+@import "tailwind/utilities.css";
+@import "utilities.css";
+
+.tippy-box[data-theme~='user'] {
+    background: transparent;
+    color: theme(colors.slate.600);
+}

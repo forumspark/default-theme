@@ -1,0 +1,80 @@
+#shoutbox, #conversation {
+    overflow-anchor: none;
+}
+
+#anchor {
+    overflow-anchor: auto;
+    height: 1px;
+}
+
+.shoutbox + .forumlist,
+.forumlist + .shoutbox {
+    @apply mt-6;
+}
+
+.shoutbox, .conversation {
+    @apply bg-white;
+
+    &__messages {
+        @apply px-4 overflow-y-auto h-[250px];
+    }
+
+    &__message {
+        @apply py-3 flex space-x-4;
+
+        &__user-image {
+            @apply flex-shrink-0 mt-2;
+        }
+
+        & > div:nth-child(2) {
+            @apply flex-1;
+        }
+
+        &__actions {
+            @apply mt-1 text-xs text-slate-700 self-center;
+
+            & > span {
+                @apply text-slate-400;
+            }
+        }
+    }
+
+    &-input-container {
+        @apply bg-primary-50 border-t border-primary-200 shadow-highlighter p-3;
+    }
+
+    &-input {
+        @apply rounded border border-primary-200 bg-white flex-wrap flex items-center gap-x-2 py-2;
+
+        & > input[type=text],
+        & > textarea {
+            border: 0;
+            box-shadow: none;
+            @apply mx-2;
+        }
+    }
+
+    &-input__actions {
+        @apply flex w-full px-3;
+
+        button {
+            @apply p-2 rounded hover:bg-primary-50;
+        }
+
+        .icon {
+            @apply text-slate-400;
+        }
+    }
+}
+
+.shoutbox__send {
+    @apply ml-auto;
+}
+
+.conversation-item {
+    @apply p-4 text-sm flex items-center gap-4 shadow-highlight bg-primary-25;
+
+    &--current {
+        @apply bg-accent-50;
+    }
+}

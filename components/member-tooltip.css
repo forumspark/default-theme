@@ -1,0 +1,35 @@
+.member-tooltip {
+    @apply bg-white shadow-lg rounded-lg border border-primary-200 overflow-hidden w-96 text-sm;
+
+    &__details {
+        @apply bg-white p-4 flex items-center;
+
+        .username {
+            @apply text-lg;
+        }
+
+        > div:last-child {
+            @apply ml-4 flex-1 text-sm text-left space-y-4;
+        }
+    }
+
+    &__detail-row {
+        @apply grid grid-cols-2;
+
+        & > div:first-child {
+            @apply font-bold;
+        }
+
+        & > div:last-child {
+            @apply text-right;
+        }
+    }
+
+    &__actions {
+        @apply flex divide-x bg-primary-50 border-t border-primary-100;
+
+        a {
+            @apply flex-1 text-center p-2;
+        }
+    }
+}

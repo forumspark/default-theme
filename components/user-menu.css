@@ -1,0 +1,31 @@
+.user-menu {
+    @apply py-1 bg-primary-800 text-primary-50;
+
+    .user-menu__guest a{
+        @apply text-primary-100 hover:text-white focus:text-white py-2.5;
+    }
+
+    &__trigger {
+        @apply text-primary-100 hover:text-white focus:text-white;
+    }
+}
+
+.user-menu .container {
+    @apply flex items-center md:px-0;
+}
+
+.user-menu__links {
+    @apply ml-auto flex items-center;
+}
+
+.user-menu__guest {
+    @apply text-sm font-medium space-x-4 sm:-my-px sm:flex px-4;
+}
+
+.user-menu__trigger {
+    @apply bg-transparent;
+}
+
+.user-alerts {
+    @apply flex items-center space-x-4;
+}

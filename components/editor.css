@@ -1,0 +1,23 @@
+.editor-emoticons {
+    @apply border border-primary-200 w-full bg-white;
+
+    &__header {
+        @apply p-2 bg-primary-50 shadow-inset-px text-slate-500 font-medium text-sm border-b border-primary-200;
+    }
+
+    &__list {
+        @apply flex flex-wrap gap-2 p-2;
+    }
+}
+
+.editor-tools {
+    @apply hidden sm:block flex flex-wrap items-center gap-1;
+
+    select {
+        @apply py-0.5 text-sm;
+    }
+}
+
+.editor-preview {
+    @apply px-6 border border-primary-200 rounded prose prose-sm sm:prose-base;
+}

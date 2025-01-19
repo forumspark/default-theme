@@ -1,0 +1,87 @@
+body {
+    @apply bg-slate-100 text-slate-700 font-sans antialiased;
+}
+
+a {
+    @apply text-slate-500 transition duration-[50ms] ease-in-out;
+}
+
+a:hover {
+    @apply text-primary-500;
+}
+
+select {
+    @apply text-sm rounded-sm shadow-sm border-slate-200 pl-2 py-2 focus:border-primary-500 focus:ring-primary-500 inline-block w-auto;
+
+    &:disabled {
+        @apply cursor-not-allowed opacity-50;
+    }
+}
+
+pre {
+    @apply overflow-auto;
+}
+code {
+    @apply text-sm bg-slate-50 border overflow-x-auto max-w-full;
+}
+
+blockquote {
+    @apply bg-slate-50 border border-slate-200 p-3 rounded;
+}
+
+cite {
+    @apply block text-sm italic;
+}
+
+cite + blockquote {
+    @apply mt-2;
+}
+
+input[type=checkbox] {
+    @apply rounded appearance-none border border-slate-300 text-secondary-500 cursor-pointer p-1;
+
+    &:focus {
+        @apply ring-primary-500
+    }
+
+    &:disabled {
+        @apply text-primary-300;
+    }
+
+    &:checked {
+        @apply border-secondary-500
+    }
+}
+
+textarea,
+input[type=email],
+input[type=date],
+input[type=number],
+input[type=password],
+input[type=text] {
+    @apply appearance-none block w-full placeholder:text-slate-300 border-slate-300 focus:border-primary-500 focus:ring-primary-500 rounded-md shadow-sm;
+}
+
+input.input--append {
+    @apply border-0 rounded-r-none border-r-0 shadow-none focus:ring-0
+}
+
+.input-label {
+    @apply block font-medium text-sm text-slate-700 cursor-pointer;
+}
+
+.input-error {
+    @apply mt-2 text-sm text-red-600 space-y-1;
+}
+
+.inline-label {
+    @apply flex items-center space-x-1 cursor-pointer
+}
+
+.copyright {
+    @apply mt-4 text-center p-4 text-xs;
+}
+
+.saved-message {
+    @apply text-sm text-gray-600 mr-2;
+}

@@ -1,0 +1,27 @@
+.data-grid {
+    @apply divide-y text-sm divide-primary-100;
+}
+
+.data-grid__header {
+    @apply bg-gradient-to-b from-primary-100 to-primary-50 shadow-inset-px text-slate-500 font-medium text-sm grid divide-x;
+}
+
+.data-grid__header > div {
+    @apply p-2;
+}
+
+.data-grid__row {
+    @apply grid text-sm divide-x divide-primary-100;
+}
+
+.data-grid__row > div {
+    @apply p-2 items-center sm:flex bg-primary-50 shadow-highlight;
+}
+
+.data-grid--bans,
+.data-grid--emoticons {
+    .data-grid__header,
+    .data-grid__row {
+        @apply grid-cols-2;
+    }
+}

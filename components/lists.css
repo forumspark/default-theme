@@ -1,0 +1,7 @@
+.item-list {
+    @apply divide-y divide-primary-100;
+}
+
+.option-list {
+    @apply space-y-2;
+}

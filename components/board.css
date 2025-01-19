@@ -1,0 +1,47 @@
+#wrap {
+
+}
+
+#wrap main {
+    @apply mx-1.5 sm:mx-auto max-w-7xl;
+}
+
+.board-logo {
+    @apply shrink-0 flex items-center;
+}
+
+.board-actions {
+    @apply my-6 py-2 gap-4 grid grid-cols-2 sm:px-0 sm:flex items-center max-w-7xl sm:mx-auto mx-1.5 text-slate-700;
+
+    &__theme-selector {
+        @apply col-span-2 sm:col-span-1 sm:flex items-center text-sm sm:space-x-2 sm:mr-auto;
+
+        form {
+            @apply flex-1;
+        }
+
+        select {
+            @apply w-full;
+        }
+
+        .selected-theme {
+            @apply text-slate-500 italic;
+        }
+    }
+
+    &__mark-read {
+        @apply text-xs mr-auto sm:mr-2;
+    }
+
+    &__time {
+        @apply flex items-center text-xs justify-end;
+
+        svg {
+            @apply text-slate-400;
+        }
+
+        a {
+            @apply ml-1 text-secondary-500 font-medium;
+        }
+    }
+}

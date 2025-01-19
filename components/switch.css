@@ -1,0 +1,27 @@
+.inline-switch {
+    @apply flex items-center space-x-4;
+}
+
+.switch {
+    @apply cursor-pointer transition w-10 rounded-full p-1;
+
+    &--active {
+        @apply bg-primary-500;
+
+        .switch__toggle {
+            @apply translate-x-full;
+        }
+    }
+
+    &--inactive {
+        @apply bg-slate-300;
+
+        .switch__toggle {
+            @apply translate-x-0;
+        }
+    }
+
+    &__toggle {
+        @apply bg-white h-4 w-4 rounded-full transition;
+    }
+}

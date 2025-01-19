@@ -1,0 +1,6 @@
+.page-header {
+    @apply flex items-center h-32 bg-primary-500 p-6 shadow-highlighter;
+    &__logo {
+        @apply max-w-7xl mx-auto w-full;
+    }
+}

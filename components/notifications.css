@@ -1,0 +1,31 @@
+.notifications .dropdown__content {
+    @apply pb-0 bg-primary-25;
+}
+
+.notifications .notifications__dropdown-trigger {
+    @apply relative mt-2;
+}
+
+.notifications__list {
+    @apply divide-y divide-primary-200 max-h-[400px] overflow-y-auto;
+}
+
+.notifications__actions {
+    @apply bg-primary-50 rounded-b-md shadow-highlight border-t text-slate-600 border-primary-200 text-sm flex items-center space-x-2 justify-end p-2;
+}
+
+.notification {
+    @apply relative p-3 text-slate-500 text-sm bg-primary-25 hover:bg-primary-50 cursor-pointer;
+    @apply flex items-start gap-2;
+
+    &__meta {
+        @apply mt-1 text-xs text-slate-500;
+        &__read {
+            @apply ml-1;
+        }
+    }
+}
+
+.notification__dot {
+    @apply w-2 h-2 rounded-full bg-red-500 absolute top-0 right-0 -mr-0.5;
+}
