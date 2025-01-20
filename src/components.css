@@ -44,6 +44,7 @@
 @import "components/guest-layout.css";
 @import "components/two-factor.css";
 @import "components/member-tooltip.css";
+@import "components/profile.css";
 
 /** Panel specifics **/
 @import "components/top-posters.css";

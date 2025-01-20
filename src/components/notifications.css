@@ -24,6 +24,10 @@
             @apply ml-1;
         }
     }
+
+    &__link {
+        @apply absolute inset-0;
+    }
 }
 
 .notification__dot {

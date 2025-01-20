@@ -39,3 +39,7 @@
         }
     }
 }
+
+.panel--user-profile .mini-profile {
+    @apply bg-primary-25;
+}

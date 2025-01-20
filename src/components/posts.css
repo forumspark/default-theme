@@ -39,6 +39,10 @@
         .reply__user {
             @apply sm:w-1/5 flex-shrink-0 border-r px-2 py-8 text-center min-w-0 shadow-highlight;
             @apply hidden sm:block;
+
+            .avatar {
+                @apply mx-auto;
+            }
         }
 
         .reply__content {
@@ -117,6 +121,9 @@
 
 .quick-reply__user {
     @apply hidden sm:block w-1/5 flex-shrink-0 border-r text-center p-4;
+    .avatar {
+        @apply mx-auto;
+    }
 }
 
 .quick-reply__input {

@@ -51,3 +51,19 @@ div.dropdown .dropdown__content a.dropdown__link {
 .dropdown__separator {
     @apply h-px bg-primary-100 my-1;
 }
+
+.dropdown--sm {
+    @apply w-48;
+}
+
+.dropdown--md {
+    @apply w-56;
+}
+
+.dropdown--lg {
+    @apply w-64;
+}
+
+.dropdown--xl {
+    @apply w-72;
+}

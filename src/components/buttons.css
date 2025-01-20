@@ -26,3 +26,6 @@
     @apply px-2 py-1 tracking-normal normal-case;
 }
 
+.btn-disabled {
+    @apply opacity-60 cursor-not-allowed;
+}
