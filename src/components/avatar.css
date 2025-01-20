@@ -1,5 +1,5 @@
 .avatar {
-    @apply bg-slate-50 relative flex-shrink-0;
+    @apply relative flex-shrink-0;
 
     img {
         @apply inset-0 absolute object-cover w-full h-full;

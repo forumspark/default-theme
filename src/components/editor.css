@@ -21,3 +21,11 @@
 .editor-preview {
     @apply px-6 border border-primary-200 rounded prose prose-sm sm:prose-base;
 }
+
+.editor-preview-toggle {
+    @apply mt-4;
+}
+
+textarea#content {
+    @apply mt-1 resize-none;
+}
