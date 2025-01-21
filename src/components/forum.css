@@ -96,7 +96,7 @@
 }
 
 .forum-actions {
-    @apply flex justify-end mt-6;
+    @apply flex justify-end mt-6 space-x-2;
 }
 
 .active-users {
