@@ -21,3 +21,7 @@
 .avatar--xs {
     @apply w-7 h-7;
 }
+
+.avatar--xxs {
+    @apply w-5 h-5 rounded-full overflow-hidden;
+}

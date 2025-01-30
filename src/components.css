@@ -45,6 +45,7 @@
 @import "components/two-factor.css";
 @import "components/member-tooltip.css";
 @import "components/profile.css";
+@import "components/auth.css";
 
 /** Panel specifics **/
 @import "components/top-posters.css";

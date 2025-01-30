@@ -18,7 +18,7 @@
     }
 
     .reply__details {
-        @apply p-4 pb-0 sm:p-0 flex items-center sm:items-stretch sm:border-b border-primary-100;
+        @apply p-4 pb-0 sm:p-0 flex items-center sm:items-stretch sm:border-b border-primary-100  bg-primary-25;
 
         &__username {
             @apply sm:p-2 sm:text-center min-w-0;
@@ -77,7 +77,7 @@
 }
 
 .topic .replies {
-    @apply divide-y bg-white border-t;
+    @apply divide-y bg-white border-t border-primary-100 divide-primary-100;
 }
 
 

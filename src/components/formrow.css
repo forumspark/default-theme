@@ -1,3 +1,7 @@
+.form-layout {
+    @apply space-y-4;
+}
+
 .formrow {
     @apply sm:flex sm:divide-x divide-primary-100 p-3 sm:p-0 bg-primary-25 shadow-highlight;
 

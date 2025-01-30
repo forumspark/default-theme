@@ -44,4 +44,8 @@
             @apply ml-1 text-secondary-500 font-medium;
         }
     }
+
+    &__theme-selector + &__time {
+        @apply col-span-2;
+    }
 }

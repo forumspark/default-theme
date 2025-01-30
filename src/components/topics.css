@@ -1,5 +1,11 @@
 .topic-row {
     @apply min-w-0 sm:flex p-3 sm:p-0 bg-primary-50/50 shadow-highlight;
+
+    &--unread {
+        .topic-row__name a {
+            @apply font-medium text-slate-700;
+        }
+    }
 }
 
 .topic-row__bulk-select {
@@ -8,6 +14,10 @@
 
 .topic-row__marker {
     @apply hidden w-12 flex-shrink-0 p-3 sm:flex items-center justify-center;
+}
+
+.topic-row__badges {
+    @apply sm:px-3 flex-shrink-0 flex items-center sm:space-x-2 text-slate-600;
 }
 
 .topic-row__name {
